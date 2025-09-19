@@ -65,3 +65,7 @@ with open("columns.json", "w") as f:
     f.write(json.dumps(columns))
 
 print("Script finished successfully!")
+
+# suppose your trained model object is named 'lr_model'
+with open("bangalore_house_price_model.pickle", "wb") as f:
+    pickle.dump(model, f)
